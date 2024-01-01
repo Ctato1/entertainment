@@ -1,0 +1,54 @@
+.home {
+  width: 100%;
+  padding-top: 60px;
+  padding-left: 150px;
+}
+
+.home .search__section {
+  display: flex;
+  width: 381px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.home .search__section input {
+  color: var(--Pure-White, #fff);
+  width: 100%;
+  font-size: 24px;
+  font-weight: 300;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.home .search__section input:hover,
+.home .search__section input:focus{
+    border-bottom: 1px solid #5A698F;
+}
+
+/* movie sections */
+
+.recomended__section{
+  max-width: 1300px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+@media(max-width:768px){
+  .home {
+    width: 100%;
+    padding: 10px 10px;
+  }
+  
+  .home .search__section {
+    display: flex;
+    width: 300px;
+    height: 32px;
+    display: flex;
+    gap: 24px;
+  }
+  .home .search__section input {
+    font-size: 16px;
+  }
+  
+}

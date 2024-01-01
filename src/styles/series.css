@@ -1,0 +1,20 @@
+.series__section {
+  width: 100%;
+  padding-top: 60px;
+  padding-left: 150px;
+  max-width: 1500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: auto;
+}
+.series__section h3 {
+  padding: 30px 0;
+  color: var(--Pure-White, #fff);
+
+  /* Heading (L) */
+  font-size: 32px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+}
