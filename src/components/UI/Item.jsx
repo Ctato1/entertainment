@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./item-card.css";
 
-import { useSelector, useDispatch } from "react-redux";
+import {useDispatch } from "react-redux";
 import { userActions } from "../../redux/user/UserSlice";
 
 const Item = ({ itemInfo }) => {
@@ -11,8 +11,6 @@ const Item = ({ itemInfo }) => {
     year,
     category,
     rating,
-    isBookmarked,
-    isTrending,
   } = itemInfo;
   const dispatch = useDispatch();
 
