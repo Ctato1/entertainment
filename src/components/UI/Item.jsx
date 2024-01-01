@@ -27,7 +27,7 @@ const Item = ({ itemInfo }) => {
       }
     }
   }, [title]);
-  
+
   const makeFavorite = () => {
     dispatch(userActions.clickFavorite());
     let favoritedMovies = localStorage.getItem("favorites");
@@ -51,7 +51,7 @@ const Item = ({ itemInfo }) => {
   return (
     <div className="movie__item">
       <div className="movie__item-img">
-        <img src={thumbnails} alt="image" />
+        <img src={thumbnails} alt={`Thumbnail for ${title}`} />
         {isFavorited ? (
           <>
             <svg
