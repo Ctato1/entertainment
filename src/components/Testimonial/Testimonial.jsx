@@ -22,7 +22,7 @@ const Testimonial = ({ aboutData }) => {
         breakpoint: 1024,
         settings: {
           infinite: true,
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
           arrows: false,
         },
@@ -44,7 +44,19 @@ const Testimonial = ({ aboutData }) => {
         breakpoint: 500,
         settings: {
           infinite: true,
-          slidesToShow: 1,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 5500,
+          cssEase: "linear",
+          pauseOnHover: true,
+        },
+      },
+      {
+        breakpoint: 333,
+        settings: {
+          infinite: true,
+          slidesToShow:1,
           slidesToScroll: 1,
           autoplay: true,
           autoplaySpeed: 5500,
