@@ -1,4 +1,3 @@
-import { Col } from "reactstrap";
 import "../../styles/sidebar.css";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";

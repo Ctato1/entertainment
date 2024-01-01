@@ -19,15 +19,15 @@ const Item = ({ itemInfo }) => {
   useEffect(() => {
     let favoritedMovies = localStorage.getItem("favorites");
     favoritedMovies = favoritedMovies ? JSON.parse(favoritedMovies) : [];
-
+  
     for (let i = 0; i < favoritedMovies.length; i++) {
       if (favoritedMovies[i].title === title) {
         setIsFavorited(true);
         break;
       }
     }
-  }, [isFavorited]);
-
+  }, [title]);
+  
   const makeFavorite = () => {
     dispatch(userActions.clickFavorite());
     let favoritedMovies = localStorage.getItem("favorites");
